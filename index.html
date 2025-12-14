@@ -1,0 +1,241 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        univer.kaznpu.kz
+    </title>
+    <script type="text/javascript" src="/Content/js/jquery.js"></script>
+    <style type="text/css">
+        #body-wrapper {
+            margin: 10px auto;
+            width: 900px;
+        }
+
+        .title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 14pt;
+            margin: 10px;
+        }
+
+        .table-header {}
+
+        .table-header .row-header {}
+
+        .table-header .row-header .col-title {
+            text-align: right;
+            vertical-align: middle;
+            padding: 1px 10px;
+        }
+
+        .table-header .row-header .col-value {
+            border-bottom: 1px solid #aabbcc;
+            text-align: left;
+            vertical-align: middle;
+            font-weight: bold;
+        }
+
+        table.results {
+            border-collapse: collapse;
+            margin: 10px 5px;
+        }
+
+        table.results th {
+            padding: 2px 1px;
+            border: 1px solid #aabbcc;
+            font-size: 11pt;
+            background: #E1E3E0;
+        }
+
+        table.results td {
+            padding: 2px 1px;
+            border: 1px solid #aabbcc;
+            font-size: 11pt;
+        }
+
+        table.results td div {
+            white-space: nowrap;
+            width: 30px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        table.results td.first, table.results th.first {
+            padding: 1px 5px;
+            white-space: nowrap;
+            text-align: left;
+        }
+
+        @media print {
+            .noprint {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="body-wrapper">
+        <div class="noprint">
+            <a class='val' href="/student/AttemptList?testId=46104"></a>
+        </div>
+        <div class='title'>
+           
+        </div>
+        <table class="table-header">
+            <tr class="row-header">
+                <td class='col-title'>Студенттің аты-жөні :</td>
+                <td class="col-value">Жиенбаев М. Ж.</td>
+            </tr>
+            <tr class="row-header">
+                <td class='col-title'>Пән:</td>
+                <td class="col-value">Философия</td>
+            </tr>
+            <tr class="row-header">
+                <td class='col-title'>Контроль:</td>
+                <td class="col-value">Емтихан сессиясы(100)</td>
+            </tr>
+            <tr class="row-header">
+                <td class='col-title'>Басталу уақыты:</td>
+                <td class="col-value">15.12.2025 15:00</td>
+            </tr>
+            <tr class="row-header">
+                <td class='col-title'>Аяқталу уақыты:</td>
+                <td class="col-value">15.12.2025 16:00</td>
+			</tr>	
+			<tr class="row-header">
+				<td class='col-title'>Қалған уақыты:</td>
+				<td class="col-value"><span id="time" style="font-weight: bold; font-size: 12pt;">40:00</span>
+
+<script>
+    var totalSeconds = 40 * 60;
+
+    function startTimer() {
+        var timerElement = document.getElementById('time');
+
+        var interval = setInterval(function () {
+            var minutes = Math.floor(totalSeconds / 60);
+            var seconds = totalSeconds % 60;
+
+            if (minutes < 10) minutes = '0' + minutes;
+            if (seconds < 10) seconds = '0' + seconds;
+
+            timerElement.textContent = minutes + ':' + seconds;
+
+            totalSeconds--;
+
+            if (totalSeconds < 0) {
+                clearInterval(interval);
+                timerElement.textContent = '00:00';
+            }
+        }, 1000);
+    }
+
+    window.onload = startTimer;
+</script>
+</td>
+            </tr>
+            </tr>
+        </table>
+        <!-- Қалған кестелер өзгеріссіз -->
+		<!-- Кнопки сверху -->
+<div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+</div>
+
+<!-- Таблица с ответами -->
+<table class="results" style="border-collapse: collapse; font-size: 14pt; text-align: center; width: 100%;">
+    <tr>
+        <th class="first" style="background:white; padding:8px 12px; border:1px solid black;">Номер</th>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">1</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">2</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">3</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">4</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">5</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">6</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">7</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">8</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">9</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">10</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">11</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">12</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">13</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">14</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">15</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">16</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">17</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">18</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">19</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">20</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">21</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">22</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">23</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">24</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">25</td>
+    </tr>
+    <tr>
+        <th class="first" style="background:white; padding:8px 12px; border:1px solid black;">Жауап</th>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">B</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">B</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;"> </td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;"> </td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">D</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">A</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">D</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">A</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">B</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">C</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">A</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">D</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;">B</td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;"> </td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;"> </td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;"> </td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;"> </td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;"> </td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;"> </td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;"> </td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;"> </td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;"> </td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;"> </td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;"> </td>
+        <td style="background:white; padding:8px 12px; border:1px solid black;"> </td>
+    </tr>
+</table>
+<!-- Компактные навигационные кнопки под таблицей -->
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px; width: 60%; font-size: 12pt;">
+    <!-- Левая часть: кнопки навигации -->
+    <div>
+        <button style="font-size: 12pt; padding: 3px 8px;">&lt;&lt;</button>
+        <span style="margin: 0 10px;">4/20</span>
+        <button style="font-size: 12pt; padding: 3px 8px;">&gt;&gt;</button>
+    </div>
+
+    <!-- Правая часть: кнопка завершения -->
+    <div>
+        <button style="font-size: 12pt; padding: 3px 8px;">Аяқтау</button>
+    </div>
+</div>
+
+<!-- Вопрос снизу без бордера и названия предмета -->
+<div style="margin-top: 30px; padding: 15px; background: #fff; width: 80%; font-size: 14pt;">
+    <div style="margin-bottom: 15px; font-size: 12pt;">
+        <strong>4. Философияның мәнін ең дұрыс сипаттайтын тұжырым</strong>
+    </div>
+    <div>
+        <label style="display:block; margin-bottom: 5px;">
+            <input type="radio" name="question1" value="A"> A) Табиғат пен қоғам туралы ғылым
+        </label>
+        <label style="display:block; margin-bottom: 5px;">
+            <input type="radio" name="question1" value="B"> B) Өмір мен білімнің мәні туралы ілім
+        </label>
+        <label style="display:block; margin-bottom: 5px;">
+            <input type="radio" name="question1" value="C"> C) Ойлау өнері
+        </label>
+        <label style="display:block; margin-bottom: 5px;">
+            <input type="radio" name="question1" value="D"> D) Діни танымның бір түрі
+        </label>
+    </div>
+</div>
+
+    </div>
+</body>
+</html>
